@@ -1,0 +1,25 @@
+// Place all the styles related to the enquetes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.add_option_button{
+	margin: 0px;
+	width: 100px;
+	
+	background: {
+		color: gray;
+	}
+
+	user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
+
+	text:{
+		align: center;
+	}
+
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	padding: 4px 0;
+	color: white;
+}
