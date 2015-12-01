@@ -4,12 +4,24 @@
 
 $ ->
 	typeChanged = ($s) ->
-		$insert_area = $s.parentNode.querySelector('.insert_area')
-		#alert('type is changed...')
-		typeSwitch($insert_area, $s.value)
+		#セレクターの内容が変更された
+		#$insert_area = $s.parentNode.querySelector('.insert_area')
+	
+		$par = $s.parent()
+		console.log $s
+		$insert_area = $par.children '.insert_area'
+		
+		$ins = $ 'select'
+		console.log $ins.parent()
 
+		#セレクター内のinsert areaを変更
+		if $insert_area
+			typeSwitch($insert_area, $s.val())
+		else
+			console.log "Error"
 		
 	typeSwitch = ($area, $type) ->
+		#switch
 		switch $type
 			when 'checkbox'
 				makeCheckbox $area
@@ -22,21 +34,28 @@ $ ->
 			else
 				console.log('Unknown Type...')
 	
-	makeOption = ($area) ->  
+	makeOption = ($area) ->
 		console.log("add option")
+		$outer = $("<div>").addClass 'option'
+		
+		console.log $area
+		
+		$area.appendChild $outer
 
 	makeCheckbox = ($area) ->
+		if $area.querySelector '.add_option_button'
+			return console.log 'already checkbox'
 		console.log('make chackbox')
 		$bu =(document.createElement("div"))
 		$bu.setAttribute('class','add_option_button')
 		$bu.textContent = 'Add Option'
 		$b = $area.appendChild $bu
-		console.log $b
-		console.log $(".insert_area")
-		$(".insert_area").click ->
-				console.log @
-				makeOption $(@)
+		console.log $hoge = $area.querySelector '.add_option_button'
+		makeOption $area
+
+		$('.add_option_button:last').click ->
+			makeOption $(@)
 
 	$("#question_type").change ->
-		typeChanged(this)
+		typeChanged $(@)
 
