@@ -38,6 +38,18 @@ $ ->
 		console.log("add option")
 		$outer = $("<div>").addClass 'option'
 		
+		$("<input>").attr({
+			type: 'text',
+			class: 'option_text'
+		}).appendTo $outer
+
+		$remove_button = $("<div>").addClass 'option_remove'
+		$remove_button.html 'remove'
+		$($remove_button.appendTo $outer).click ->
+			console.log $(@).parent().remove()
+		
+		console.log $remove_button
+		
 		$area.append $outer
 
 	makeCheckbox = ($area) ->
@@ -62,7 +74,7 @@ $ ->
 		makeOption $area
 
 		$('.add_option_button:last').click ->
-			makeOption $(@)
+			makeOption $(@).parent()
 
 	$("#question_type").change ->
 		typeChanged $(@)
