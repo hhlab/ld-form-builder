@@ -38,19 +38,27 @@ $ ->
 		console.log("add option")
 		$outer = $("<div>").addClass 'option'
 		
-		console.log $area
-		
-		$area.appendChild $outer
+		$area.append $outer
 
 	makeCheckbox = ($area) ->
-		if $area.querySelector '.add_option_button'
+		#checkboxを作るよ
+		if ($area.find '.add_option_button').length != 0
+			#すでにボタンがあった場合はスルー
 			return console.log 'already checkbox'
 		console.log('make chackbox')
+		###
 		$bu =(document.createElement("div"))
 		$bu.setAttribute('class','add_option_button')
 		$bu.textContent = 'Add Option'
 		$b = $area.appendChild $bu
 		console.log $hoge = $area.querySelector '.add_option_button'
+		###
+		
+		$bu = $("<div>").addClass 'add_option_button'
+		
+		$area.append $bu
+		console.log $area.find '.add_option_button'
+		$($area.find '.add_option_button').html('Add Option')
 		makeOption $area
 
 		$('.add_option_button:last').click ->
