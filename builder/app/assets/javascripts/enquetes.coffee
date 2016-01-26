@@ -31,6 +31,7 @@ ready = ->
 				makeTextarea $area
 			when 'number_field'
 				console.log('number')
+				makeNumberfield $area
 			else
 				console.log('Unknown Type...')
 	
@@ -97,8 +98,12 @@ ready = ->
 		console.log $area
 		#text_area作るよ
 		$area.empty()
-		$area.append($('<div>').html('Text Area'))
-
+		$area.append($('<label>').html('テキスト入力'))
+	
+	makeNumberfield = ($area) ->
+		console.log 'make number field'
+		$area.empty()
+		$area.append($('<label>').html('数値入力'))
 	
 	#init
 	$(".question_type").change ->

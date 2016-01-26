@@ -57,6 +57,10 @@
 
 }
 
+input#enquete_title{
+	width: 400px;
+}
+
 input.question_title{
 	width: 60%;
 	min-width: 200px;
@@ -96,4 +100,8 @@ div#add_question{
   border-radius: 4px;
   padding: 4px 0;
   color: white;
+}
+
+.insert_area label{
+	padding: 3px;
 }
