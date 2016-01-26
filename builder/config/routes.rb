@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :enquetes do
 		collection do 
 			get :upanel
-			get :select_question_type
+			post :select_question_type
 		end
 	end
 

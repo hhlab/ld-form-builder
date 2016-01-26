@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.question{
+	background: {
+		color: rgba(100,100,100,0.3);
+	}
+}
+
+
 .add_option_button{
 	margin: 3px;
 	width: 100px;
@@ -48,4 +55,45 @@
 	-moz-user-select: none;
 	cursor: pointer;
 
+}
+
+input.question_title{
+	width: 60%;
+	min-width: 200px;
+	max-width: 500px;
+}
+
+div.question_delete_button{
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 3px;
+	margin-right: 5px;
+}
+
+div.question_header{
+	margin: 3px;
+	padding-top: 3px;
+}
+
+div#add_question{
+  margin: 3px;
+  width: 100px;
+  
+  background: {
+    color: gray;
+  }
+
+  user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+
+  text:{
+    align: center;
+  }
+
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  padding: 4px 0;
+  color: white;
 }

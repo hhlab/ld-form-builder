@@ -20,10 +20,14 @@ class EnquetesController < ApplicationController
   def new
     @enquete = Enquete.new
   	@question_types = ["checkbox","multiple_choice","text_area","number_field"]
+		@form = LD::Form.new('hoge')
 	end
 
 	def select_question_type
-		
+		print "aaaaaaaaaaaaaaaaaaaaa"	
+		respond_to do |format|
+		  format.html { render :nothing => true }
+		end
 	end
 
   # GET /enquetes/1/edit
@@ -78,6 +82,8 @@ class EnquetesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enquete_params
-      params.require(:enquete).permit(:title)
+			print 'hogeeee -> '
+			print params
+      params.require(:enquete).permit(:title, :form)
     end
 end

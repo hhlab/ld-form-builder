@@ -15,13 +15,19 @@
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  
-	<div class="field">
-		<%= form_tag({ action: :select_question_type }, remote: true) do %>
-			<%= select_tag 'question_type', options_for_select(@question_types) %>
-		<% end %>
+	
+	
+	<div class="field question">
+		<div class="question_header">
+			<div class="question_delete_button">×</div>
+			<label>Question-title:</label>
+			<input type="text" class="question_title" /></br>
+			<%= select_tag '', options_for_select(@question_types), :class => 'question_type' %>
+		</div>
 		<div class="insert_area"></div>
 	</div>
+	
+	<div id="add_question">Add Question</div>
 
 	<div class="actions">
     <%= f.submit %>
