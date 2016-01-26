@@ -103,7 +103,23 @@ ready = ->
 	makeNumberfield = ($area) ->
 		console.log 'make number field'
 		$area.empty()
+
 		$area.append($('<label>').html('数値入力'))
+		$num_area = $('<div>').addClass 'number_area'
+		
+		$num_area.append($('<label>').html('最小値'))
+		$('<input>').attr({
+			class: 'number_field',
+			type: 'number'
+		}).appendTo $num_area
+		$num_area.append('</br>')
+		$num_area.append($('<label>').html('最大値'))
+		$('<input>').attr({
+			class: 'number_field',
+			type: 'number'
+		}).appendTo $num_area
+	
+		$num_area.appendTo $area
 	
 	#init
 	$(".question_type").change ->
