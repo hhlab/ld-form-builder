@@ -85,5 +85,5 @@ class EnquetesController < ApplicationController
 			print 'hogeeee -> '
 			print params
       params.require(:enquete).permit(:title, :form)
-    end
+		end
 end

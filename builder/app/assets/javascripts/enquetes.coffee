@@ -122,18 +122,49 @@ ready = ->
 		$num_area.appendTo $area
 	
 	#init
-	$(".question_type").change ->
-		typeChanged $(@)
+	if $('#new_enquete').length!=0
+		$(".question_type").change ->
+			typeChanged $(@)
 
-	$('#add_question').click ->
-		makeQuestion()
+		$('#add_question').click ->
+			makeQuestion()
 
-	$('.question_delete_button').click ->
-		deleteQuestion $(@).closest('.question')
-
-	typeChanged $('select')
+		$('.question_delete_button').click ->
+			deleteQuestion $(@).closest('.question')
 	
-	makeQuestion()
+		$('#new_enquete').submit ->
+			str = "{"
+			fFlag = true
+
+			$('.question').each ->
+				if fFlag
+					fFlag = false
+				else
+					str += ','
+
+				str += '{title: "' + $(@).find('.question_title').val() + '", '
+				t = $(@).find('select').val()
+				if t=='checkbox'||t=='multiple_choice'
+					str += 'type: "' + t + '", options: '
+					fFlag0 = true
+					$(@).find('.option_text').each ->
+						if fFlag0
+							fFlag0 = false
+						else 
+							str += ','
+
+						str += '"' + $(@).val() + '"'
+					
+				str += '}'
+
+			str += '}'
+			$('#json_area').val(str)
+			alert str
+
+
+		typeChanged $('select')
+	
+		makeQuestion()
 
 	
 $ ->
