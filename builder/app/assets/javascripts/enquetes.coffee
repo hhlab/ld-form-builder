@@ -131,6 +131,38 @@ ready = ->
 	$('.question_delete_button').click ->
 		deleteQuestion $(@).closest('.question')
 
+	$('#new_enquete').submit ->
+		flag = true
+		$.each $('.field input'), (i,input) ->
+			console.log input.value
+			if !input.value
+				alert '未入力の項目があります。'
+				flag = false
+		
+		if !flag
+			return false
+
+		title = $('#enquete_title').val()
+		alert title
+		str = '{title: ' + title + ','
+
+		$.each $('.question'), (i, field) ->
+			if i!=0
+				str += ', '
+			type = $(@).find('select').val()
+			str += 'question: {'
+			str += "title: '" + $(@).find('.question_title').val() + "', "
+			str += "type: '" + type + "'"
+
+			str += '}'
+		str += '}'
+
+		$('#json_data').val str
+		alert str
+		return flag
+		
+		
+		
 	typeChanged $('select')
 	
 	makeQuestion()
