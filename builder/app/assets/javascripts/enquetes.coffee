@@ -109,13 +109,13 @@ ready = ->
 		
 		$num_area.append($('<label>').html('最小値'))
 		$('<input>').attr({
-			class: 'number_field',
+			class: 'number_field number_min',
 			type: 'number'
 		}).appendTo $num_area
 		$num_area.append('</br>')
 		$num_area.append($('<label>').html('最大値'))
 		$('<input>').attr({
-			class: 'number_field',
+			class: 'number_field number_max',
 			type: 'number'
 		}).appendTo $num_area
 	
@@ -153,7 +153,23 @@ ready = ->
 			str += 'question: {'
 			str += "title: '" + $(@).find('.question_title').val() + "', "
 			str += "type: '" + type + "'"
-
+			switch type
+				when 'checkbox'
+					str += ", options: "
+					$.each $(@).find('.option_text'), (i, option) ->
+						alert option.value
+						if i!=0
+							str += ","
+						str += "'" + option.value + "'"
+				when 'mutiple_choice'
+					if i!=0
+					  str += ","
+					str += "'" + option.value + "'"
+				when 'text_area'
+					break
+				when 'number_field'
+					str += ", mix: " +$(@).find('.number_min').val() + ", "
+					str += "max: " +$(@).find('.number_max').val()
 			str += '}'
 		str += '}'
 
