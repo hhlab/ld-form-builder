@@ -2,7 +2,12 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @enquete.title %>
+  <%= @enquete.title %>	
+</p>
+
+<p>
+	<strong>Json-data:</strong>
+	<%= @enquete.form %>
 </p>
 
 <%= link_to 'Edit', edit_enquete_path(@enquete) %> |

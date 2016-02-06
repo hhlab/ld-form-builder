@@ -43,6 +43,7 @@ ready = ->
 			name: 'option[]',
 			type: 'text',
 			class: 'option_text'
+			value: 'option'
 		}).appendTo $outer
 
 		$remove_button = $("<div>").addClass 'option_remove'

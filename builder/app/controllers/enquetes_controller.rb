@@ -32,13 +32,14 @@ class EnquetesController < ApplicationController
 
   # GET /enquetes/1/edit
   def edit
-  end
+  	@question_types = ["checkbox","multiple_choice","text_area","number_field"]
+	end
 
   # POST /enquetes
   # POST /enquetes.json
   def create
     @enquete = Enquete.new(enquete_params)
-
+		print(@enquete.form)
     respond_to do |format|
       if @enquete.save
         format.html { redirect_to @enquete, notice: 'Enquete was successfully created.' }
@@ -82,8 +83,7 @@ class EnquetesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enquete_params
-			print 'hogeeee -> '
-			print params
+			params[:enquete][:form] = params[:json_data]
       params.require(:enquete).permit(:title, :form)
     end
 end
