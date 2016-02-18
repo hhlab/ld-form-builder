@@ -145,34 +145,40 @@ ready = ->
 
 		title = $('#enquete_title').val()
 		alert title
-		str = '{title: ' + title + ','
+		str = '{"title": "' + title + '",'
+		str += '"question": ['
 
 		$.each $('.question'), (i, field) ->
 			if i!=0
 				str += ', '
 			type = $(@).find('select').val()
-			str += 'question: {'
-			str += "title: '" + $(@).find('.question_title').val() + "', "
-			str += "type: '" + type + "'"
+			str += '{'
+			str += '"title": "' + $(@).find('.question_title').val() + '", '
+			str += '"type": "' + type + '"'
 			switch type
 				when 'checkbox'
-					str += ", options: "
+					str += ', "options": ['
 					$.each $(@).find('.option_text'), (i, option) ->
-						alert option.value
 						if i!=0
 							str += ","
-						str += "'" + option.value + "'"
-				when 'mutiple_choice'
-					if i!=0
-					  str += ","
-					str += "'" + option.value + "'"
+						str += '"' + option.value + '"'
+					str += "]"
+				when 'multiple_choice'
+					str += ', "options": ['
+					$.each $(@).find('.option_text'), (i, option) ->
+						if i!=0
+							str += ","
+						str += '"' + option.value + '"'
+					str += "]"
 				when 'text_area'
 					break
 				when 'number_field'
-					str += ", mix: " +$(@).find('.number_min').val() + ", "
-					str += "max: " +$(@).find('.number_max').val()
+					str += ', "min": ' +$(@).find('.number_min').val() + ", "
+					str += '"max": ' +$(@).find('.number_max').val()
+				else
+					alert 'Type error...'
 			str += '}'
-		str += '}'
+		str += ']}'
 
 		$('#json_data').val str
 		alert str

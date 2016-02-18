@@ -14,7 +14,8 @@ class EnquetesController < ApplicationController
   # GET /enquetes/1
   # GET /enquetes/1.json
   def show
-  end
+		@form = JSON.parse(@enquete.form.gsub(/'/, '"'))
+	end
 
   # GET /enquetes/new
   def new
