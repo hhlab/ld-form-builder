@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151110065736) do
+ActiveRecord::Schema.define(version: 20160218062407) do
 
   create_table "enquetes", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text     "form"
+    t.text     "url"
   end
 
 end
