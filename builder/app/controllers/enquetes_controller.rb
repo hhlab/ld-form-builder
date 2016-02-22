@@ -40,7 +40,17 @@ class EnquetesController < ApplicationController
   # POST /enquetes.json
   def create
     @enquete = Enquete.new(enquete_params)
-		print(@enquete.form)
+		f0 = JSON.parse(@enquete.form.gsub(/'/, '"'))
+		
+		title0 = f0['title']
+
+		@f = LD::Form.create do
+			title f0['title']
+			url f0['url']
+		end
+
+		print '___', @f
+
     respond_to do |format|
       if @enquete.save
         format.html { redirect_to @enquete, notice: 'Enquete was successfully created.' }

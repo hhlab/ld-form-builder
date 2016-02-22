@@ -146,6 +146,11 @@ ready = ->
 		title = $('#enquete_title').val()
 		alert title
 		str = '{"title": "' + title + '",'
+
+		url = $('#enquete_url').val()
+		alert url
+		str += '"url": "' + url + '",'
+
 		str += '"question": ['
 
 		$.each $('.question'), (i, field) ->
