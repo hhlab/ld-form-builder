@@ -190,10 +190,9 @@ ready = ->
 		return flag
 		
 		
-		
-	typeChanged $('select')
-	
-	makeQuestion()
+	if window.location.href.split('/').pop()=='new'
+		typeChanged $('select')
+		makeQuestion()
 
 	
 $ ->
