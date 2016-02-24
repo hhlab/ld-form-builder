@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+input{
+	padding: 2px;
+	margin: 2px;
+}
 .question{
 	background: {
 		color: rgba(100,100,100,0.3);
@@ -42,10 +46,6 @@
 	div{
 		display: inline-block;
 	}
-}
-
-.option_text{
-	margin: 3px;
 }
 
 .option_remove{
@@ -109,13 +109,11 @@ div#add_question{
   color: white;
 }
 
-.insert_area label{
-	padding: 3px;
-}
 
 .number_area{
 	padding: 3px;
 	label{
 		margin: 3px;
+		padding: 3px;
 	}
 }

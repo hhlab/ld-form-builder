@@ -102,6 +102,7 @@ ready = ->
 		$area.append($('<label>').html('テキスト入力'))
 	
 	makeNumberfield = ($area) ->
+		#number_field作るよ
 		console.log 'make number field'
 		$area.empty()
 
@@ -111,17 +112,54 @@ ready = ->
 		$num_area.append($('<label>').html('最小値'))
 		$('<input>').attr({
 			class: 'number_field number_min',
-			type: 'number'
+			type: 'number',
+			value: 1
 		}).appendTo $num_area
 		$num_area.append('</br>')
 		$num_area.append($('<label>').html('最大値'))
 		$('<input>').attr({
 			class: 'number_field number_max',
-			type: 'number'
+			type: 'number',
+			value: 5
 		}).appendTo $num_area
-	
+		$num_area.append('</br>')
+		$num_area.append($('<label>').html('間隔'))
+		$('<input>').attr({
+			class: 'number_field number_interval',
+			type: 'number'
+			value: 1
+		}).appendTo $num_area
+		$num_area.append('</br>')
+
+		$slider = $('<input>').attr({
+			class: 'number_slider',
+			type: 'range',
+			max: 5,
+			min: 1,
+			step: 1,
+			value: 3
+		})
+		$slider.appendTo $num_area
+		
+		$('<label>').attr({
+			class: 'slider_value'
+		}).html('3').appendTo $num_area
+
 		$num_area.appendTo $area
-	
+		
+		$area.find('input').each ->
+			$(@).change ->
+				console.log $(@).hasClass 'number_min'
+				value = $(@).val()
+				if $(@).hasClass 'number_min'
+					$(@).parent().find('.number_slider').attr min: value
+				else if $(@).hasClass 'number_max'
+					$(@).parent().find('.number_slider').attr max: value
+				else if $(@).hasClass 'number_interval'
+					$(@).parent().find('.number_slider').attr step: value
+
+				$(@).parent().find('.slider_value').html $(@).parent().find('.number_slider').val()
+
 	#init
 	$(".question_type").change ->
 		typeChanged $(@)
@@ -190,10 +228,9 @@ ready = ->
 		return flag
 		
 		
-		
-	typeChanged $('select')
-	
-	makeQuestion()
+	if window.location.href.split('/').pop()=='new'
+		typeChanged $('select')
+		makeQuestion()
 
 	
 $ ->
