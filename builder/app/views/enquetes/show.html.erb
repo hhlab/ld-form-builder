@@ -6,12 +6,11 @@
 </p>
 
 <p>
-	<strong>Json-data:</strong>
-	<%= @enquete.form %>
-</p>
-<p>
 	<strong>Json-parsed-data:</strong>
-	<%= @form %>
 </p>
+<div>
+	<%= @json_data %>
+</div>
+<p><%= @form.title %></div>
 <%= link_to 'Edit', edit_enquete_path(@enquete) %> |
 <%= link_to 'Back', enquetes_path %>

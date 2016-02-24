@@ -1,3 +1,8 @@
+# coding: utf-8
+require "ld/form"
+require "ld/visualization/dot"
+require "json/ld"
+
 class EnquetesController < ApplicationController
   before_action :set_enquete, only: [:show, :edit, :update, :destroy]
 
@@ -14,7 +19,12 @@ class EnquetesController < ApplicationController
   # GET /enquetes/1
   # GET /enquetes/1.json
   def show
-		@form = JSON.parse(@enquete.form.gsub(/'/, '"'))
+    @form = Marshal.load(@enquete.form)
+
+    graph = @form.to_rdf
+    @json_data = graph.dump(:jsonld)
+
+		@title = @form.title
 	end
 
   # GET /enquetes/new
@@ -40,7 +50,7 @@ class EnquetesController < ApplicationController
   # POST /enquetes.json
   def create
     @enquete = Enquete.new(enquete_params)
-		print(@enquete.form)
+
     respond_to do |format|
       if @enquete.save
         format.html { redirect_to @enquete, notice: 'Enquete was successfully created.' }
@@ -84,7 +94,27 @@ class EnquetesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enquete_params
-			params[:enquete][:form] = params[:json_data]
+
+      f0 = JSON.parse(params[:json_data].gsub(/'/, '"'))
+
+      @f = LD::Form.create do
+        title f0['title']
+        url f0['url']
+        f0['question'].each do |q|
+          print q, "\n"
+          case q['type']
+          when 'checkbox' then
+            checkbox do
+              title q['title']
+              options q['options']
+            end
+          end
+        end     
+      end
+			
+      p '___',@f
+      #params[:enquete][:form] = params[:json_data]
+      params[:enquete][:form] = Marshal.dump(@f)
       params.require(:enquete).permit(:title, :form)
     end
 end
