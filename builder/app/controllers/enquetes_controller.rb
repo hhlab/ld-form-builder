@@ -30,7 +30,11 @@ class EnquetesController < ApplicationController
   # GET /enquetes/new
   def new
     @enquete = Enquete.new
-  	@question_types = ["checkbox","multiple_choice","text_area","number_field"]
+  	@question_types = {
+			"チェックボックス（単一選択）" => "checkbox",
+			"チェックボックス（複数選択可）" => "multiple_choice",
+			"テキスト入力" => "text_area",
+			"数値入力（スライダー）" =>"number_field"}
 		@form = LD::Form.new('hoge')
 	end
 
