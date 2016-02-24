@@ -8,9 +8,10 @@
 <p>
 	<strong>Json-parsed-data:</strong>
 </p>
+
 <div>
-	<%= @json_data %>
+	<%= @form.to_h %>
 </div>
-<p><%= @form.title %></div>
+
 <%= link_to 'Edit', edit_enquete_path(@enquete) %> |
 <%= link_to 'Back', enquetes_path %>
