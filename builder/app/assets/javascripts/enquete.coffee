@@ -227,8 +227,8 @@ ready = ->
 		alert str
 		return flag
 		
-		
-	if window.location.href.split('/').pop()=='new'
+	state = window.location.href.split('/').pop()	
+	if state=='new' || state=='edit'
 		typeChanged $('select')
 		makeQuestion()
 

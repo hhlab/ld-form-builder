@@ -18,6 +18,8 @@ module LD
     include OptionManagable
     include Serializable
     include RDFSerializable
+		attr_accessor :items
+		
 
     def initialize(title)
       @title = title
