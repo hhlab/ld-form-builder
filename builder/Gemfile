@@ -28,7 +28,6 @@ gem "rake"
 gem "rdf"
 gem "rdf-vocab"
 gem "json-ld"
-gem 'gon'
 
 gem "pry-rails"
 
