@@ -47,7 +47,8 @@ class EnquetesController < ApplicationController
 
   # GET /enquetes/1/edit
   def edit
-  	@question_types = ["checkbox","multiple_choice","text_area","number_field"]
+		#gon.enquete = @enquete
+		@question_types = ["checkbox","multiple_choice","text_area","number_field"]
 	end
 
   # POST /enquetes
@@ -100,7 +101,6 @@ class EnquetesController < ApplicationController
     def enquete_params
 
       f0 = JSON.parse(params[:json_data].gsub(/'/, '"'))
-
       @f = LD::Form.create do
         title f0['title']
         url f0['url']

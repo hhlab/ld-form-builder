@@ -228,10 +228,12 @@ ready = ->
 		return flag
 		
 	state = window.location.href.split('/').pop()	
-	if state=='new' || state=='edit'
+	if state=='new'
 		typeChanged $('select')
 		makeQuestion()
-
+	else if state == 'edit'
+		console.log 'Editing now'
+		
 	
 $ ->
 	ready()
