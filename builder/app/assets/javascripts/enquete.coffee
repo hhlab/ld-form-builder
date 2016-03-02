@@ -232,7 +232,11 @@ ready = ->
 		typeChanged $('select')
 		makeQuestion()
 	else if state == 'edit'
-		console.log 'Editing now'
+		$.each gon.h.items,(i,obj) ->
+			console.log obj.title
+		$.each gon.h.options,(i,obj) ->
+			console.log obj.label
+		
 		
 	
 $ ->
