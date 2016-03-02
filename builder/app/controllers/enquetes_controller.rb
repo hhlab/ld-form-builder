@@ -47,7 +47,7 @@ class EnquetesController < ApplicationController
 
   # GET /enquetes/1/edit
   def edit
-		@form = Marshal.load(@enquete.form)
+		@form = Marshal.load(@enquete.form.force_encoding('UTF-8'))
 		gon.en = @enquete
 		gon.fo = @form.to_h
 		@question_types = ["checkbox","multiple_choice","text_area","number_field"]
