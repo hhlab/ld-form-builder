@@ -103,7 +103,7 @@ class EnquetesController < ApplicationController
     def enquete_params
 
       f0 = JSON.parse(params[:json_data].gsub(/'/, '"'))
-			
+			puts f0	
       @f = LD::Form.create do
         title f0['title']
         url f0['url']
@@ -115,7 +115,21 @@ class EnquetesController < ApplicationController
               title q['title']
               options q['options']
             end
-          end
+					when 'multiple_choice' then
+						multiple_choice do
+							title q['title']
+							options q['options']
+						end
+					when 'number_field' then
+						number_field do
+							title q['title']
+							min q['min']
+							max q['max']
+						end
+					when 'text_area' then
+						text_area do
+						end
+					end
         end     
       end
 			
