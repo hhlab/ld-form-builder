@@ -233,8 +233,18 @@ ready = ->
 		makeQuestion()
 	else if state == 'edit'
 		console.log 'Editing now'
-		
-	
+		fo = gon.fo
+		$.each fo, (i,obj) ->
+			console.log i,obj
+			if i=='items' || i=='options'
+				$.each obj,(i0, obj0) ->
+					console.log i0, obj0
+
+		$('#enquete_title').val gon.en.title
+		u = gon.fo.url
+		link = u.scheme + '://' + u.host + u.path
+		$('#enquete_url').val link
+
 $ ->
 	ready()
 
