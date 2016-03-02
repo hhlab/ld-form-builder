@@ -1,3 +1,3 @@
 class Enquete < ActiveRecord::Base
-	serialize :form	
+	serialize :form
 end

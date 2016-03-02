@@ -12,7 +12,7 @@ module LD
 
       def to_json
         return self.to_h.to_json
-      end
+			end
 
       def create_url_from(base, appendix)
         return URI.join(base, File.join(base.path, appendix))
