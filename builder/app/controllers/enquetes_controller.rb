@@ -20,7 +20,7 @@ class EnquetesController < ApplicationController
   # GET /enquetes/1.json
   def show
     @form = Marshal.load(@enquete.form)
-		
+
     graph = @form.to_rdf
     @json_data = graph.dump(:jsonld)
 
@@ -47,13 +47,7 @@ class EnquetesController < ApplicationController
 
   # GET /enquetes/1/edit
   def edit
-		gon.title = @enquete.title
-		gon.url = @enquete.url
-		@titles = []
-		@options = []
-		@f = Marshal.load(@enquete.form)
-		gon.h = @f.to_h
-		gon.e = @enquete
+		#gon.enquete = @enquete
 		@question_types = ["checkbox","multiple_choice","text_area","number_field"]
 	end
 
@@ -106,9 +100,7 @@ class EnquetesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def enquete_params
 
-      f0 = JSON.parse(params[:json_data].gsub(/'/, '"').encode('UTF-8'))
-			puts f0['question']
-			puts 'Make LD::Form'
+      f0 = JSON.parse(params[:json_data].gsub(/'/, '"'))
       @f = LD::Form.create do
         title f0['title']
         url f0['url']
