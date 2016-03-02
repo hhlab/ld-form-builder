@@ -239,6 +239,22 @@ ready = ->
 			if i=='items' || i=='options'
 				$.each obj,(i0, obj0) ->
 					console.log i0, obj0
+		i = 0
+		while i < fo.items.length
+			console.log fo.items[i]
+			if i!=0
+				makeQuestion()
+			switch fo.items[i].type
+				when "LD::Form::Checkbox"
+					$('select:last').val "checkbox"
+				when "LD::Form::MultipleChoice"
+					$('select:last').val "multiple_choice"
+				when "LD::Form::TextArea"
+					$('select:last').val "text_area"
+				when "LD::Form::NumberField"
+					$('select:last').val "number_field"
+			typeChanged $('select:last')
+			i += 2
 
 		$('#enquete_title').val gon.en.title
 		u = gon.fo.url
