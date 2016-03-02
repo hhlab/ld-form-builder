@@ -47,6 +47,12 @@ class EnquetesController < ApplicationController
 
   # GET /enquetes/1/edit
   def edit
+		@question_types = {
+			"チェックボックス（単一選択）" => "checkbox",
+			"チェックボックス（複数選択可）" => "multiple_choice",
+			"テキスト入力" => "text_area",
+			"数値入力（スライダー）" =>"number_field"
+		}
 		@form = Marshal.load(@enquete.form.force_encoding('UTF-8'))
 		gon.en = @enquete
 		gon.fo = @form.to_h

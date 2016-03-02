@@ -244,16 +244,36 @@ ready = ->
 			console.log fo.items[i]
 			if i!=0
 				makeQuestion()
+			if fo.items[i].title
+				$('.question_title:last').val fo.items[i].title
+			else
+				$('.question_title:last').val 'Title'
 			switch fo.items[i].type
 				when "LD::Form::Checkbox"
 					$('select:last').val "checkbox"
+					typeChanged $('select:last')
+					$('.insert_area:last .option').remove()
+					path = fo.items[i].url.path
+					$.each fo.options, (n, op) ->
+						if path==op.refered_from.items[0].path
+							makeOption($('.insert_area:last'))
+							$('.option_text:last').val op.label
 				when "LD::Form::MultipleChoice"
 					$('select:last').val "multiple_choice"
+					typeChanged $('select:last')
+					$('.insert_area:last .option').remove()
+					path = fo.items[i].url.path
+					$.each fo.options, (n, op) ->
+						if path==op.refered_from.items[0].path
+							makeOption($('.insert_area:last'))
+							$('.option_text:last').val op.label
 				when "LD::Form::TextArea"
 					$('select:last').val "text_area"
+					typeChanged $('select:last')
 				when "LD::Form::NumberField"
 					$('select:last').val "number_field"
-			typeChanged $('select:last')
+					typeChanged $('select:last')
+
 			i += 2
 
 		$('#enquete_title').val gon.en.title
