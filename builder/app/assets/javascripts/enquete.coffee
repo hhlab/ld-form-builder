@@ -159,18 +159,8 @@ ready = ->
 					$(@).parent().find('.number_slider').attr step: value
 
 				$(@).parent().find('.slider_value').html $(@).parent().find('.number_slider').val()
-
-	#init
-	$(".question_type").change ->
-		typeChanged $(@)
-
-	$('#add_question').click ->
-		makeQuestion()
-
-	$('.question_delete_button').click ->
-		deleteQuestion $(@).closest('.question')
-
-	$('#new_enquete').submit ->
+				
+	sendJSONData = ->
 		flag = true
 		$.each $('.field input'), (i,input) ->
 			console.log input.value
@@ -226,11 +216,23 @@ ready = ->
 		$('#json_data').val str
 		alert str
 		return flag
+
+	#init
+	$(".question_type").change ->
+		typeChanged $(@)
+
+	$('#add_question').click ->
+		makeQuestion()
+
+	$('.question_delete_button').click ->
+		deleteQuestion $(@).closest('.question')
 		
 	state = window.location.href.split('/').pop()	
 	if state=='new'
 		typeChanged $('select')
 		makeQuestion()
+		('form').submit ->
+			sendJSONData()
 	else if state == 'edit'
 		console.log 'Editing now'
 		fo = gon.fo
@@ -280,6 +282,9 @@ ready = ->
 		u = gon.fo.url
 		link = u.scheme + '://' + u.host + u.path
 		$('#enquete_url').val link
+		
+		$("form").submit ->
+			sendJSONData()
 
 $ ->
 	ready()
