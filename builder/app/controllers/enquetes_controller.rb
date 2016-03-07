@@ -48,7 +48,6 @@ class EnquetesController < ApplicationController
   # GET /enquetes/1/edit
   def edit
 		gon.clean
-		puts '（＾ω＾）'
 		@question_types = {
 			"チェックボックス（単一選択）" => "checkbox",
 			"チェックボックス（複数選択可）" => "multiple_choice",
@@ -58,7 +57,8 @@ class EnquetesController < ApplicationController
 		@form = Marshal.load(@enquete.form.force_encoding('UTF-8'))
 		gon.en = @enquete
 		gon.fo = @form.to_h
-		puts '（・´へ｀・）'
+		num_array = []
+		
 	end
 
   # POST /enquetes
@@ -134,6 +134,8 @@ class EnquetesController < ApplicationController
 							min q['min']
 							max q['max']
 						end
+						self.items.last.min = q['min']
+						self.items.last.max = q['max']
 					when 'text_area' then
 						text_area do
 							title q['title']

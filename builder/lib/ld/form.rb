@@ -18,8 +18,8 @@ module LD
     include OptionManagable
     include Serializable
     include RDFSerializable
-		attr_accessor :items
 		
+		attr_accessor :items
 
     def initialize(title)
       @title = title
@@ -29,7 +29,7 @@ module LD
       @options_base_url = nil
       @items_base_url = nil
     end
-		
+    
     def url=(url)
       url = URI.parse(url) unless url.is_a?(URI)
       @url = url
