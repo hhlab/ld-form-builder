@@ -226,15 +226,23 @@ ready = ->
 
 	$('.question_delete_button').click ->
 		deleteQuestion $(@).closest('.question')
+
+	$('form').submit ->
+		sendJSONData() 
 		
 	state = window.location.href.split('/').pop()	
 	if state=='new'
 		typeChanged $('select')
 		makeQuestion()
-		('form').submit ->
-			sendJSONData()
 	else if state == 'edit'
 		console.log 'Editing now'
+		while 1
+			if true
+				break
+			else
+				setTimeout ->
+					console.log 'wait'
+				,100
 		fo = gon.fo
 		$.each fo, (i,obj) ->
 			console.log i,obj
@@ -276,15 +284,12 @@ ready = ->
 					$('select:last').val "number_field"
 					typeChanged $('select:last')
 
-			i += 2
+			i += 2	
 
-		$('#enquete_title').val gon.en.title
 		u = gon.fo.url
 		link = u.scheme + '://' + u.host + u.path
-		$('#enquete_url').val link
-		
-		$("form").submit ->
-			sendJSONData()
+		$('#enquete_url').val u.scheme + '://' + u.host + u.path
+		$('#enquete_title').val gon.en.title
 
 $ ->
 	ready()

@@ -29,6 +29,7 @@ gem "rdf"
 gem "rdf-vocab"
 gem "json-ld"
 gem 'gon'
+gem 'jquery-turbolinks'
 
 gem "pry-rails"
 
