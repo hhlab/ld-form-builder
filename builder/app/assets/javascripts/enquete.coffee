@@ -123,6 +123,7 @@ ready = ->
 			value: 5
 		}).appendTo $num_area
 		$num_area.append('</br>')
+		###
 		$num_area.append($('<label>').html('間隔'))
 		$('<input>').attr({
 			class: 'number_field number_interval',
@@ -130,7 +131,7 @@ ready = ->
 			value: 1
 		}).appendTo $num_area
 		$num_area.append('</br>')
-
+		###
 		$slider = $('<input>').attr({
 			class: 'number_slider',
 			type: 'range',
