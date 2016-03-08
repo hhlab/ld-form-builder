@@ -33,13 +33,6 @@ gem 'jquery-turbolinks'
 
 gem "pry-rails"
 
-gem 'rb-readline'
-gem 'unicorn'
-gem 'capistrano'
-gem 'capistrano-rails'
-gem 'capistrano-bundler'
-gem 'capistrano-rbenv', github: "capistrano/rbenv"
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
