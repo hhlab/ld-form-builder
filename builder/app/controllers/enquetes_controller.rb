@@ -50,7 +50,7 @@ class EnquetesController < ApplicationController
 			"数値入力（スライダー）" =>"number_field"
 		}
 		@form = Marshal.load(@enquete.form.force_encoding('UTF-8'))
-		gon.en = @enquete
+		gon.title = @enquete.title
 		gon.fo = @form.to_h
 
 		

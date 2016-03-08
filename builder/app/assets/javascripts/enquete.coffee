@@ -237,13 +237,7 @@ ready = ->
 		makeQuestion()
 	else if state == 'edit'
 		console.log 'Editing now'
-		while 1
-			if true
-				break
-			else
-				setTimeout ->
-					console.log 'wait'
-				,100
+		
 		fo = gon.fo
 		$.each fo, (i,obj) ->
 			console.log i,obj
@@ -285,12 +279,12 @@ ready = ->
 					$('select:last').val "number_field"
 					typeChanged $('select:last')
 
-			i += 2	
+			i += 2
 
 		u = gon.fo.url
 		link = u.scheme + '://' + u.host + u.path
 		$('#enquete_url').val u.scheme + '://' + u.host + u.path
-		$('#enquete_title').val gon.en.title
+		$('#enquete_title').val gon.title
 
 $ ->
 	ready()
