@@ -27,7 +27,9 @@ gem "rspec"
 gem "rake"
 gem "rdf"
 gem "rdf-vocab"
+gem "rdf-turtle"
 gem "json-ld"
+gem "active_model_serializers", github: "rails-api/active_model_serializers"
 gem 'gon'
 gem 'jquery-turbolinks'
 
@@ -54,5 +56,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-

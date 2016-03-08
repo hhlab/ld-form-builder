@@ -1,0 +1,3 @@
+[submodule "builder/vendor/maff-translator"]
+	path = builder/vendor/maff-translator
+	url = git@github.com:hhlab/maff-translator.git
