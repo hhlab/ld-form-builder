@@ -1,0 +1,9 @@
+/Users/utayo/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20160308-1699-11xkhu2.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
