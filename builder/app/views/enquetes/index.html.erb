@@ -1,7 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Enquetes</h1>
-
+<h1>アンケート一覧</h1>
+<%= link_to '新規アンケート作成', new_enquete_path %>
 <table>
   <thead>
     <tr>
@@ -23,7 +21,8 @@
 </table>
 
 <br>
-
+<!--
 <div id="result">現在時刻::<%= Time.now %></div>
 <%= link_to '更新', {action: :upanel }, remote: true %>
-<%= link_to 'New Enquete', new_enquete_path %>
+//-->
+

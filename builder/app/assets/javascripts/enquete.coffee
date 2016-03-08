@@ -173,11 +173,11 @@ ready = ->
 			return false
 
 		title = $('#enquete_title').val()
-		alert title
+		#alert title
 		str = '{"title": "' + title + '",'
 
 		url = $('#enquete_url').val()
-		alert url
+		#alert url
 		str += '"url": "' + url + '",'
 
 		str += '"question": ['
@@ -207,15 +207,15 @@ ready = ->
 				when 'text_area'
 					break
 				when 'number_field'
-					str += ', "min": ' +$(@).find('.number_min').val() + ", "
-					str += '"max": ' +$(@).find('.number_max').val()
+					str += ', "min": ' +$(@).find('.number_min').val() + ', '
+					str += '"max": ' +$(@).find('.number_max').val() + ''
 				else
 					alert 'Type error...'
 			str += '}'
 		str += ']}'
 
 		$('#json_data').val str
-		alert str
+		#alert str
 		return flag
 
 	#init

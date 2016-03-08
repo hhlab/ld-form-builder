@@ -42,8 +42,8 @@ module LD
 
       protected
       def is_valid_number?(number)
-        return number.is_a?(:integer)
-      end
+      	return number.is_a?(Integer)
+			end
 
       def is_greater_than_min?(number)
         return @min == nil || @min <= number

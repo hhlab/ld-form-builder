@@ -19,12 +19,7 @@ class EnquetesController < ApplicationController
   # GET /enquetes/1
   # GET /enquetes/1.json
   def show
-    @form = Marshal.load(@enquete.form)
-
-    graph = @form.to_rdf
-    @json_data = graph.dump(:jsonld)
-
-		@title = @form.title
+    @form = Marshal.load(@enquete.form).to_h.to_s	
 	end
 
   # GET /enquetes/new
@@ -57,7 +52,7 @@ class EnquetesController < ApplicationController
 		@form = Marshal.load(@enquete.form.force_encoding('UTF-8'))
 		gon.en = @enquete
 		gon.fo = @form.to_h
-		num_array = []
+
 		
 	end
 
@@ -68,8 +63,8 @@ class EnquetesController < ApplicationController
 
     respond_to do |format|
       if @enquete.save
-        format.html { redirect_to @enquete, notice: 'Enquete was successfully created.' }
-        format.json { render :show, status: :created, location: @enquete }
+				format.html { redirect_to @enquete, notice: 'Enquete was successfully created.' }
+				format.json { render :show, status: :created, location: @enquete }
       else
         format.html { render :new }
         format.json { render json: @enquete.errors, status: :unprocessable_entity }
