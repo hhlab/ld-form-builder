@@ -1,0 +1,16 @@
+
+<p>
+  <strong>Title:</strong>
+  <%= @enquete.title %>	
+</p>
+
+<p>
+	<strong>Json-parsed-data:</strong>
+</p>
+
+<div>
+	<%= @form %>
+</div>
+
+<%= link_to 'Edit', edit_enquete_path(@enquete) %> |
+<%= link_to 'Back', enquetes_path %>

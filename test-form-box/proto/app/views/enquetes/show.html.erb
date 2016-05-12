@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @enquete.title %>
+</p>
+
+<% @questions.each do |q| %>
+	<p>
+		<%= q.qtype %>
+	</p>
+<% end %>
+
+<%= link_to 'Edit', edit_enquete_path(@enquete) %> |
+<%= link_to 'Back', enquetes_path %>
