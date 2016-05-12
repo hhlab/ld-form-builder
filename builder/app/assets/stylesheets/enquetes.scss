@@ -1,0 +1,121 @@
+// Place all the styles related to the enquetes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question{
+	background: {
+		color: rgba(100,100,100,0.3);
+	}
+	max-width: 1000px;
+	padding: 3px;
+}
+
+#json_data{
+	display: none;
+	width: 1000px;
+
+}
+
+.add_option_button{
+	margin: 3px;
+	width: 100px;
+	
+	background: {
+		color: gray;
+	}
+
+	user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
+
+	text:{
+		align: center;
+	}
+
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	padding: 4px 0;
+	color: white;
+}
+
+.option{
+	div{
+		display: inline-block;
+	}
+}
+
+.option_text{
+	margin: 3px;
+}
+
+.option_remove{
+	color: white;
+	
+	background: {
+		color: black;
+	}
+	padding: {
+		left: 3px;
+		right: 3px;
+	}
+	user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
+
+}
+
+input#enquete_title, #enquete_url{
+	width: 400px;
+}
+
+input.question_title{
+	width: 60%;
+	min-width: 200px;
+	max-width: 500px;
+}
+
+div.question_delete_button{
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 3px;
+	margin-right: 5px;
+}
+
+div.question_header{
+	margin: 3px;
+	padding-top: 3px;
+}
+
+div#add_question{
+  margin: 3px;
+  width: 100px;
+  
+  background: {
+    color: gray;
+  }
+
+  user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+
+  text:{
+    align: center;
+  }
+
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  padding: 4px 0;
+  color: white;
+}
+
+.insert_area label{
+	padding: 3px;
+}
+
+.number_area{
+	padding: 3px;
+	label{
+		margin: 3px;
+	}
+}

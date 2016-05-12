@@ -1,0 +1,2 @@
+module EnquetesHelper
+end
