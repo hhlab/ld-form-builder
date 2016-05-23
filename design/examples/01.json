@@ -1,0 +1,1211 @@
+[
+  {
+    "@id": "_:g70162422638120",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422676720",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422724620",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422741780",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/1/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/1/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422757620",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/5"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422805020",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422818760",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422882440",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422887800",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422888680",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/3"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_7": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_8": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_9": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_10": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_11": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_12": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_13": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_14": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422936800",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162422949440",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423003260",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423017740",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423066040",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423079220",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423081140",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423083700",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/1/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423112880",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/1/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423128160",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/9"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/10"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/11"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/12"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/13"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_6": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/14"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423133220",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423178880",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423183660",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423253880",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423290120",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/1/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423301820",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423317640",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423373240",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423389340",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423389380",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/1"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/2"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/3"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423416460",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423448460",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/2"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423452640",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/4"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_2": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/5"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_3": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/6"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_4": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/7"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_5": [
+      {
+        "@id": "http://example.com/questionaries/beer/options/8"
+      }
+    ]
+  },
+  {
+    "@id": "_:g70162423466420",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+      {
+        "@id": "http://example.com/questionaries/beer/2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "ビールに関するアンケート"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/form"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/form#has_options": [
+      {
+        "@id": "_:g70162422888680"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/form#has_items": [
+      {
+        "@id": "_:g70162422757620"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/1",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "あなたについて教えて下さい"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/group"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/group#items": [
+      {
+        "@id": "_:g70162422741780"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/1/1",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "年齢を教えて下さい"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer/1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/1/2",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "性別を教えてください"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer/1"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/group"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/checkbox#has_options": [
+      {
+        "@id": "_:g70162423081140"
+      },
+      {
+        "@id": "_:g70162423253880"
+      },
+      {
+        "@id": "_:g70162423389380"
+      },
+      {
+        "@id": "_:g70162422724620"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/2",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "飲酒の頻度を教えてください"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/group"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/checkbox#has_options": [
+      {
+        "@id": "_:g70162423416460"
+      },
+      {
+        "@id": "_:g70162423452640"
+      },
+      {
+        "@id": "_:g70162423373240"
+      },
+      {
+        "@id": "_:g70162423301820"
+      },
+      {
+        "@id": "_:g70162423178880"
+      },
+      {
+        "@id": "_:g70162422676720"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/3",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "一番好きなスタイルを教えてください"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/group"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/checkbox#has_options": [
+      {
+        "@id": "_:g70162423128160"
+      },
+      {
+        "@id": "_:g70162423066040"
+      },
+      {
+        "@id": "_:g70162423003260"
+      },
+      {
+        "@id": "_:g70162422936800"
+      },
+      {
+        "@id": "_:g70162422882440"
+      },
+      {
+        "@id": "_:g70162422805020"
+      },
+      {
+        "@id": "_:g70162422638120"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/4",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "一度に飲む量をパイントで教えてください"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/5",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "ビールに対する愛を叫んでください！"
+      }
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/item#parent": [
+      {
+        "@value": "http://example.com/questionaries/beer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/1",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "男性"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423083700"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/10",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "エール"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423079220"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/11",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ポーター"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423017740"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/12",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "スタウト"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162422949440"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/13",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IPA"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162422887800"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/14",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ヴァイツェン"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162422818760"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/2",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "女性"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423112880"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/3",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "その他"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423290120"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/4",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "毎日"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423448460"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/5",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "週に2、3度"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423466420"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/6",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "週に1度"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423389340"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/7",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "月に2、3度"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423317640"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/8",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "月に1度以下"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423183660"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.com/questionaries/beer/options/9",
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ラガー"
+      }
+    ],
+    "@type": [
+      "http://www.hyakuju.keio.ac.jp/form/option"
+    ],
+    "http://www.hyakuju.keio.ac.jp/form/option#refered_from": [
+      {
+        "@id": "_:g70162423133220"
+      }
+    ]
+  }
+]
