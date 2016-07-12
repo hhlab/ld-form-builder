@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+ans_valid:
+  answer_json: '{}'
+  form_structure: f_str_valid
+
+ans_valid_2:
+  answer_json: '{}'
+  form_structure: f_str_valid
+
+ans_invalid_json:
+  answer_json: piyo
+  form_structure: f_str_valid
