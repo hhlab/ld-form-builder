@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Enquetes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enquetes.each do |enquete| %>
+      <tr>
+        <td><%= enquete.title %></td>
+        <td><%= link_to 'Show', enquete %></td>
+        <td><%= link_to 'Edit', edit_enquete_path(enquete) %></td>
+        <td><%= link_to 'Destroy', enquete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enquete', new_enquete_path %>

@@ -1,0 +1,35 @@
+<%= form_for(@enquete) do |f| %>
+  <% if @enquete.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@enquete.errors.count, "error") %> prohibited this enquete from being saved:</h2>
+
+      <ul>
+      <% @enquete.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+	
+	
+	<div class="field question">
+		<div class="question_header">
+			<div class="question_delete_button">×</div>
+			<label>Question-title:</label>
+			<input type="text" class="question_title" /></br>
+			<%= select_tag '', options_for_select(@question_types), :class => 'question_type' %>
+		</div>
+		<div class="insert_area"></div>
+	</div>
+	
+	<div id="add_question">Add Question</div>
+	<input type="text" id="json_area" name="json_data"></div>
+	<div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+digraph <%= title %>{
+
+<% literals.each do |i| %>
+  "<%= i %>" [shape="box"]
+<% end %>
+
+<% statements.each do |s| %>
+  "<%= s[0] %>" -> "<%= s[2] %>" [label="<%= s[1] %>"]
+<% end %>
+}
