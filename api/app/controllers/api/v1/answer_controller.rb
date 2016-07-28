@@ -1,6 +1,4 @@
 class Api::V1::AnswerController < ApplicationController
-  # テスト用にトークン認証を無効
-  # TODO:環境変数等で切り替える
 
   def index
     begin
@@ -55,7 +53,8 @@ class Api::V1::AnswerController < ApplicationController
 
   def create
     begin
-      @articles = Answer.create!({answer_json:[:answer_json], structure_json:params[:structure_json]})
+      @parent_form_structure = FormStructure.find_by!(id: params[:form_structure])
+      Answer.create!({answer_json:params[:answer_json], form_structure:@parent_form_structure})
       @articles = Answer.last!
       @header ={
           :status => :ok,

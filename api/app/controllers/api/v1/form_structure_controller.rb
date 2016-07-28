@@ -1,8 +1,4 @@
 class Api::V1::FormStructureController < ApplicationController
-  # テスト用にトークン認証を無効
-  # TODO:環境変数等で切り替える
-  # protect_from_forgery except: [:create]
-
   def index
     begin
       @form_structures = FormStructure.all.reverse_order!
